@@ -1,0 +1,368 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "price": 89.99,
+    "originalPrice": 129.99,
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["wireless", "bluetooth", "audio", "headphones"],
+    "rating": 4.5,
+    "reviewCount": 1247,
+    "badges": ["Sale", "Best Seller"],
+    "description": "Premium wireless Bluetooth headphones with noise cancellation, 30-hour battery life, and superior sound quality. Perfect for music lovers and professionals.",
+    "inventory": 25,
+    "colors": ["Black", "White", "Blue"],
+    "variants": ["Standard", "Premium"]
+  },
+  {
+    "id": 2,
+    "title": "Smart Fitness Watch",
+    "price": 199.99,
+    "images": [
+      "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400",
+      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["fitness", "smartwatch", "health", "wearable"],
+    "rating": 4.3,
+    "reviewCount": 892,
+    "badges": ["New"],
+    "description": "Advanced fitness tracking watch with heart rate monitoring, GPS, sleep tracking, and waterproof design. Stay connected and healthy.",
+    "inventory": 15,
+    "colors": ["Black", "Silver", "Rose Gold"],
+    "variants": ["42mm", "46mm"]
+  },
+  {
+    "id": 3,
+    "title": "Organic Cotton T-Shirt",
+    "price": 24.99,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400"
+    ],
+    "category": "Clothing",
+    "tags": ["organic", "cotton", "t-shirt", "casual"],
+    "rating": 4.7,
+    "reviewCount": 2156,
+    "badges": ["Eco-Friendly"],
+    "description": "Comfortable organic cotton t-shirt made from sustainable materials. Soft, breathable, and perfect for everyday wear.",
+    "inventory": 50,
+    "colors": ["White", "Black", "Navy", "Gray"],
+    "variants": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 4,
+    "title": "Ceramic Coffee Mug Set",
+    "price": 34.99,
+    "originalPrice": 49.99,
+    "images": [
+      "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=400",
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400"
+    ],
+    "category": "Home & Kitchen",
+    "tags": ["ceramic", "coffee", "mugs", "kitchen"],
+    "rating": 4.6,
+    "reviewCount": 734,
+    "badges": ["Sale", "Set"],
+    "description": "Beautiful ceramic coffee mug set of 4 with unique designs. Perfect for coffee lovers and makes a great gift.",
+    "inventory": 30,
+    "colors": ["Assorted"],
+    "variants": ["4-piece set"]
+  },
+  {
+    "id": 5,
+    "title": "Yoga Mat Premium",
+    "price": 49.99,
+    "images": [
+      "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400"
+    ],
+    "category": "Sports & Fitness",
+    "tags": ["yoga", "fitness", "mat", "exercise"],
+    "rating": 4.8,
+    "reviewCount": 1567,
+    "badges": ["Best Seller"],
+    "description": "High-quality yoga mat with excellent grip and cushioning. Perfect for all types of yoga and fitness exercises.",
+    "inventory": 40,
+    "colors": ["Purple", "Blue", "Green", "Pink"],
+    "variants": ["Standard", "Extra Thick"]
+  },
+  {
+    "id": 6,
+    "title": "Wireless Charging Pad",
+    "price": 29.99,
+    "images": [
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+      "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["wireless", "charging", "accessories", "phone"],
+    "rating": 4.4,
+    "reviewCount": 623,
+    "badges": ["Fast Shipping"],
+    "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design and LED indicator lights.",
+    "inventory": 60,
+    "colors": ["Black", "White"],
+    "variants": ["Standard"]
+  },
+  {
+    "id": 7,
+    "title": "Vintage Leather Backpack",
+    "price": 89.99,
+    "originalPrice": 119.99,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+      "https://images.unsplash.com/photo-1581605405669-ca104a6c07d1?w=400"
+    ],
+    "category": "Fashion",
+    "tags": ["backpack", "leather", "vintage", "bag"],
+    "rating": 4.5,
+    "reviewCount": 445,
+    "badges": ["Sale", "Limited"],
+    "description": "Genuine leather backpack with vintage styling. Durable, spacious, and perfect for work or travel.",
+    "inventory": 12,
+    "colors": ["Brown", "Black"],
+    "variants": ["Standard"]
+  },
+  {
+    "id": 8,
+    "title": "Smart Home Security Camera",
+    "price": 79.99,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+      "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["security", "camera", "smart home", "surveillance"],
+    "rating": 4.2,
+    "reviewCount": 389,
+    "badges": ["New"],
+    "description": "Wireless security camera with night vision, motion detection, and mobile app control. Keep your home safe.",
+    "inventory": 20,
+    "colors": ["White"],
+    "variants": ["Indoor", "Outdoor"]
+  },
+  {
+    "id": 9,
+    "title": "Essential Oil Diffuser",
+    "price": 39.99,
+    "images": [
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"
+    ],
+    "category": "Home & Kitchen",
+    "tags": ["essential oil", "diffuser", "aromatherapy", "wellness"],
+    "rating": 4.6,
+    "reviewCount": 892,
+    "badges": ["Best Seller"],
+    "description": "Ultrasonic essential oil diffuser with LED lights and timer. Create a relaxing atmosphere in your home.",
+    "inventory": 35,
+    "colors": ["White", "Wood"],
+    "variants": ["100ml", "200ml"]
+  },
+  {
+    "id": 10,
+    "title": "Mechanical Keyboard",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
+      "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["keyboard", "mechanical", "gaming", "typing"],
+    "rating": 4.7,
+    "reviewCount": 1234,
+    "badges": ["Sale", "Gaming"],
+    "description": "Premium mechanical keyboard with RGB backlighting and customizable switches. Perfect for gaming and productivity.",
+    "inventory": 18,
+    "colors": ["Black", "White"],
+    "variants": ["Tactile", "Clicky", "Linear"]
+  },
+  {
+    "id": 11,
+    "title": "Stainless Steel Water Bottle",
+    "price": 19.99,
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400"
+    ],
+    "category": "Sports & Outdoors",
+    "tags": ["water bottle", "stainless steel", "hydration", "eco-friendly"],
+    "rating": 4.5,
+    "reviewCount": 756,
+    "badges": ["Eco-Friendly"],
+    "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours or hot for 12 hours.",
+    "inventory": 75,
+    "colors": ["Silver", "Black", "Blue", "Green"],
+    "variants": ["500ml", "750ml", "1L"]
+  },
+  {
+    "id": 12,
+    "title": "LED Desk Lamp",
+    "price": 44.99,
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400"
+    ],
+    "category": "Home & Office",
+    "tags": ["lamp", "LED", "desk", "lighting"],
+    "rating": 4.3,
+    "reviewCount": 298,
+    "badges": ["Energy Efficient"],
+    "description": "Adjustable LED desk lamp with multiple brightness levels and color temperature settings. Perfect for work or study.",
+    "inventory": 25,
+    "colors": ["Black", "White", "Silver"],
+    "variants": ["USB", "Battery"]
+  },
+  {
+    "id": 13,
+    "title": "Wireless Earbuds",
+    "price": 69.99,
+    "originalPrice": 99.99,
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["earbuds", "wireless", "bluetooth", "audio"],
+    "rating": 4.4,
+    "reviewCount": 1456,
+    "badges": ["Sale", "Best Seller"],
+    "description": "True wireless earbuds with active noise cancellation, touch controls, and premium sound quality.",
+    "inventory": 22,
+    "colors": ["Black", "White", "Red"],
+    "variants": ["Standard"]
+  },
+  {
+    "id": 14,
+    "title": "Plant Care Kit",
+    "price": 29.99,
+    "images": [
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400",
+      "https://images.unsplash.com/photo-1464822759844-d150f39b8c93?w=400"
+    ],
+    "category": "Home & Garden",
+    "tags": ["plants", "gardening", "care kit", "indoor"],
+    "rating": 4.6,
+    "reviewCount": 567,
+    "badges": ["Complete Kit"],
+    "description": "Everything you need to start your indoor garden: pots, soil, seeds, and care instructions.",
+    "inventory": 45,
+    "colors": ["Green"],
+    "variants": ["Beginner", "Advanced"]
+  },
+  {
+    "id": 15,
+    "title": "Gaming Mouse",
+    "price": 59.99,
+    "images": [
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400",
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["gaming", "mouse", "RGB", "precision"],
+    "rating": 4.5,
+    "reviewCount": 834,
+    "badges": ["Gaming"],
+    "description": "High-precision gaming mouse with RGB lighting, programmable buttons, and ergonomic design.",
+    "inventory": 28,
+    "colors": ["Black", "White"],
+    "variants": ["Wired", "Wireless"]
+  },
+  {
+    "id": 16,
+    "title": "Scented Candle Set",
+    "price": 34.99,
+    "images": [
+      "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=400",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400"
+    ],
+    "category": "Home & Kitchen",
+    "tags": ["candles", "scented", "aromatherapy", "decor"],
+    "rating": 4.7,
+    "reviewCount": 923,
+    "badges": ["Gift Set"],
+    "description": "Set of 3 soy wax candles with natural essential oils. Lavender, Vanilla, and Citrus scents.",
+    "inventory": 40,
+    "colors": ["Assorted"],
+    "variants": ["3-pack"]
+  },
+  {
+    "id": 17,
+    "title": "Portable Power Bank",
+    "price": 39.99,
+    "images": [
+      "https://images.unsplash.com/photo-1609592806500-3cbfe19b4c07?w=400",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["power bank", "portable", "charging", "battery"],
+    "rating": 4.3,
+    "reviewCount": 678,
+    "badges": ["Fast Charging"],
+    "description": "20000mAh portable power bank with fast charging and multiple USB ports. Keep your devices powered on the go.",
+    "inventory": 55,
+    "colors": ["Black", "Silver", "Blue"],
+    "variants": ["10000mAh", "20000mAh"]
+  },
+  {
+    "id": 18,
+    "title": "Minimalist Wall Clock",
+    "price": 24.99,
+    "images": [
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe6c?w=400",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400"
+    ],
+    "category": "Home & Decor",
+    "tags": ["clock", "wall", "minimalist", "decor"],
+    "rating": 4.4,
+    "reviewCount": 345,
+    "badges": ["Modern"],
+    "description": "Clean, minimalist wall clock with silent movement. Perfect for modern home decor.",
+    "inventory": 30,
+    "colors": ["White", "Black", "Wood"],
+    "variants": ["12-inch", "14-inch"]
+  },
+  {
+    "id": 19,
+    "title": "Resistance Bands Set",
+    "price": 19.99,
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
+      "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400"
+    ],
+    "category": "Sports & Fitness",
+    "tags": ["resistance bands", "fitness", "workout", "strength"],
+    "rating": 4.5,
+    "reviewCount": 712,
+    "badges": ["Portable"],
+    "description": "Complete set of resistance bands with different resistance levels. Perfect for home workouts and travel.",
+    "inventory": 65,
+    "colors": ["Assorted"],
+    "variants": ["5-band set"]
+  },
+  {
+    "id": 20,
+    "title": "Bluetooth Speaker",
+    "price": 49.99,
+    "originalPrice": 69.99,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400"
+    ],
+    "category": "Electronics",
+    "tags": ["bluetooth", "speaker", "wireless", "audio"],
+    "rating": 4.2,
+    "reviewCount": 567,
+    "badges": ["Sale", "Waterproof"],
+    "description": "Portable Bluetooth speaker with waterproof design and 12-hour battery life. Great sound in a compact package.",
+    "inventory": 35,
+    "colors": ["Black", "Blue", "Red"],
+    "variants": ["Standard"]
+  }
+]

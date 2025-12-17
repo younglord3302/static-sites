@@ -1,0 +1,24 @@
+{
+  "name": "saas-landing-page",
+  "version": "1.0.0",
+  "description": "Production-quality SaaS landing page with Stripe-style design",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "build": "echo 'Build complete - static site ready for deployment'",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "saas",
+    "landing-page",
+    "stripe-style",
+    "tailwindcss",
+    "swiper",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}

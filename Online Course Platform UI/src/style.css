@@ -1,0 +1,46 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind CSS via CDN */
+@import url('https://cdn.tailwindcss.com');
+
+/* Custom CSS variables for our design system */
+:root {
+  --primary: #0f6fff;
+  --accent: #ff7a59;
+  --surface: #ffffff;
+  --muted: #f5f7fb;
+  --text: #0f1724;
+  --container-max: 1200px;
+}
+
+/* Course grid styling - using Tailwind classes now */
+#courses-container {
+  min-height: 200px;
+}
+
+/* Custom utility classes */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom scrollbar removed - using default browser scrollbar */
+
+/* Focus styles for accessibility */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-in;
+}

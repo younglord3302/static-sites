@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Find Your Dream Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-briefcase text-2xl text-blue-600"></i>
+                    <h1 class="text-2xl font-bold text-gray-900">JobPortal</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Companies</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Post a Job
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1">
+                    <div class="relative">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" id="searchInput" placeholder="Search jobs, companies, or keywords..."
+                               class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <select id="sortSelect" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <option value="relevance">Sort by: Relevance</option>
+                        <option value="date">Sort by: Date Posted</option>
+                        <option value="salary-high">Sort by: Salary (High to Low)</option>
+                        <option value="salary-low">Sort by: Salary (Low to High)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Filters Sidebar -->
+            <div class="lg:w-1/4">
+                <div class="bg-white rounded-lg shadow-sm border p-6 sticky top-4">
+                    <h3 class="text-lg font-semibold mb-4">Filters</h3>
+
+                    <!-- Job Type -->
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-3">Job Type</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="full-time" class="rounded">
+                                <span class="ml-2 text-sm">Full-time</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="part-time" class="rounded">
+                                <span class="ml-2 text-sm">Part-time</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="contract" class="rounded">
+                                <span class="ml-2 text-sm">Contract</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="remote" class="rounded">
+                                <span class="ml-2 text-sm">Remote</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-3">Experience Level</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="entry" class="rounded">
+                                <span class="ml-2 text-sm">Entry Level</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="mid" class="rounded">
+                                <span class="ml-2 text-sm">Mid Level</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="senior" class="rounded">
+                                <span class="ml-2 text-sm">Senior Level</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="executive" class="rounded">
+                                <span class="ml-2 text-sm">Executive</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Salary Range -->
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-3">Salary Range</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="0-50000" class="rounded">
+                                <span class="ml-2 text-sm">$0 - $50,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="50000-100000" class="rounded">
+                                <span class="ml-2 text-sm">$50,000 - $100,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="100000-150000" class="rounded">
+                                <span class="ml-2 text-sm">$100,000 - $150,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="150000+" class="rounded">
+                                <span class="ml-2 text-sm">$150,000+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-3">Location</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="remote" class="rounded">
+                                <span class="ml-2 text-sm">Remote</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="new-york" class="rounded">
+                                <span class="ml-2 text-sm">New York</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="san-francisco" class="rounded">
+                                <span class="ml-2 text-sm">San Francisco</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="london" class="rounded">
+                                <span class="ml-2 text-sm">London</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="toronto" class="rounded">
+                                <span class="ml-2 text-sm">Toronto</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Industry -->
+                    <div class="mb-6">
+                        <h4 class="font-medium mb-3">Industry</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="technology" class="rounded">
+                                <span class="ml-2 text-sm">Technology</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="finance" class="rounded">
+                                <span class="ml-2 text-sm">Finance</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="healthcare" class="rounded">
+                                <span class="ml-2 text-sm">Healthcare</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="education" class="rounded">
+                                <span class="ml-2 text-sm">Education</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-checkbox" value="retail" class="rounded">
+                                <span class="ml-2 text-sm">Retail</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="clearFilters" class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+                        Clear All Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="lg:w-3/4">
+                <div class="flex items-center justify-between mb-6">
+                    <div id="resultsCount" class="text-gray-600">
+                        Showing 0 jobs
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-600">Show:</span>
+                        <select id="itemsPerPage" class="px-3 py-1 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span class="text-sm text-gray-600">per page</span>
+                    </div>
+                </div>
+
+                <div id="jobListings" class="space-y-4">
+                    <!-- Job cards will be populated here -->
+                </div>
+
+                <!-- Pagination -->
+                <div id="pagination" class="flex justify-center items-center space-x-2 mt-8">
+                    <!-- Pagination buttons will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="homeSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Find Your Dream Job Today</h2>
+            <p class="text-xl text-gray-600 mb-8">Connect with top companies and discover opportunities that match your skills and ambitions</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <i class="fas fa-search text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Smart Search</h3>
+                    <p class="text-gray-600">Advanced filtering and search capabilities to find exactly what you're looking for</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <i class="fas fa-building text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Top Companies</h3>
+                    <p class="text-gray-600">Browse opportunities from leading companies across all industries</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+                    <i class="fas fa-rocket text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Career Growth</h3>
+                    <p class="text-gray-600">Access to career development resources and professional networking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Companies Section -->
+    <div id="companiesSection" class="bg-gray-50 py-16 hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Companies</h2>
+                <p class="text-xl text-gray-600">Work with industry leaders and innovative startups</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-3xl text-blue-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">TechCorp</h3>
+                            <p class="text-gray-600">San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Leading technology company specializing in web development and digital solutions.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">12 open positions</span>
+                        <button class="company-view-jobs-btn text-blue-600 hover:text-blue-800 font-medium" data-company="TechCorp">View Jobs</button>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-3xl text-green-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">DataTech Solutions</h3>
+                            <p class="text-gray-600">New York, NY</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Data analytics and machine learning company driving business intelligence.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">8 open positions</span>
+                        <button class="company-view-jobs-btn text-green-600 hover:text-green-800 font-medium" data-company="DataTech Solutions">View Jobs</button>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-3xl text-purple-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">CloudTech</h3>
+                            <p class="text-gray-600">Toronto, ON</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Cloud infrastructure and DevOps solutions provider.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">15 open positions</span>
+                        <button class="company-view-jobs-btn text-purple-600 hover:text-purple-800 font-medium" data-company="CloudTech">View Jobs</button>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heartbeat text-3xl text-red-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">City Hospital</h3>
+                            <p class="text-gray-600">Toronto, ON</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Leading healthcare provider committed to patient care and medical excellence.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">6 open positions</span>
+                        <button class="company-view-jobs-btn text-red-600 hover:text-red-800 font-medium" data-company="City Hospital">View Jobs</button>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">Tech University</h3>
+                            <p class="text-gray-600">San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Premier educational institution focused on technology and innovation.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">4 open positions</span>
+                        <button class="company-view-jobs-btn text-indigo-600 hover:text-indigo-800 font-medium" data-company="Tech University">View Jobs</button>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shopping-cart text-3xl text-orange-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">BrandCo</h3>
+                            <p class="text-gray-600">New York, NY</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Consumer products company known for innovative marketing and retail solutions.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-600">9 open positions</span>
+                        <button class="company-view-jobs-btn text-orange-600 hover:text-orange-800 font-medium" data-company="BrandCo">View Jobs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="aboutSection" class="py-16 hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About JobPortal</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Connecting talented professionals with amazing opportunities since 2020</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-700 mb-6">We believe that everyone deserves to find work they're passionate about. Our platform connects job seekers with opportunities that match their skills, values, and career goals.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>Advanced matching algorithms</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>Verified company profiles</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>Career development resources</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>24/7 support for job seekers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-lg">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">50K+</div>
+                            <div class="text-gray-600">Active Users</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">10K+</div>
+                            <div class="text-gray-600">Job Postings</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                            <div class="text-gray-600">Partner Companies</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                            <div class="text-gray-600">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm border p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">What Our Users Say</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"Found my dream job within a week of signing up. The filtering system made it so easy to find exactly what I was looking for."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-gray-600 text-sm">Software Engineer</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"As an employer, we've found amazing talent through JobPortal. The platform is intuitive and the candidates are high-quality."</p>
+                        <div class="font-semibold">Michael Chen</div>
+                        <div class="text-gray-600 text-sm">HR Director, TechCorp</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"The search functionality is incredibly powerful. I can filter by location, salary, and job type all at once."</p>
+                        <div class="font-semibold">Emma Davis</div>
+                        <div class="text-gray-600 text-sm">Product Manager</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Detail Modal -->
+    <div id="jobModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 id="modalJobTitle" class="text-2xl font-bold text-gray-900"></h2>
+                            <p id="modalCompany" class="text-lg text-gray-600"></p>
+                        </div>
+                        <button id="closeModal" class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <span id="modalLocation"><i class="fas fa-map-marker-alt mr-1"></i></span>
+                            <span id="modalType"><i class="fas fa-clock mr-1"></i></span>
+                            <span id="modalSalary"><i class="fas fa-dollar-sign mr-1"></i></span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold mb-2">Job Description</h3>
+                            <p id="modalDescription" class="text-gray-700 leading-relaxed"></p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold mb-2">Requirements</h3>
+                            <ul id="modalRequirements" class="text-gray-700 list-disc list-inside space-y-1"></ul>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold mb-2">Benefits</h3>
+                            <ul id="modalBenefits" class="text-gray-700 list-disc list-inside space-y-1"></ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex space-x-4">
+                        <button id="applyBtn" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Apply Now
+                        </button>
+                        <button id="saveBtn" class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="far fa-bookmark mr-2"></i>Save Job
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

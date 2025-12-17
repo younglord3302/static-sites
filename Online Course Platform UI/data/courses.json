@@ -1,0 +1,340 @@
+[
+  {
+    "id": "course-101",
+    "title": "Modern JavaScript: From Zero to Production",
+    "slug": "modern-javascript-zero-to-production",
+    "price": 49.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Web Development",
+    "tags": ["javascript", "frontend", "es6"],
+    "level": "Intermediate",
+    "duration": "8h 30m",
+    "rating": 4.8,
+    "reviewsCount": 1240,
+    "thumbnail": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-1",
+      "name": "Asha Kapoor",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face",
+      "bio": "Front-end engineer & instructor with 8+ years of experience"
+    },
+    "curriculum": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {"id": "l1", "title": "Intro & Setup", "duration": "5:20", "contentType": "video", "locked": false},
+          {"id": "l2", "title": "JS Basics", "duration": "18:12", "locked": false},
+          {"id": "l3", "title": "Variables & Data Types", "duration": "12:45", "locked": false}
+        ]
+      },
+      {
+        "section": "ES6+ Features",
+        "lessons": [
+          {"id": "l4", "title": "Arrow Functions", "duration": "15:30", "locked": false},
+          {"id": "l5", "title": "Template Literals", "duration": "8:20", "locked": false},
+          {"id": "l6", "title": "Destructuring", "duration": "22:15", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 3,
+    "description": "Learn modern JavaScript from fundamentals to production-ready code. Master ES6+, async programming, modules, and best practices for building scalable applications.",
+    "resources": ["assets/files/js-cheatsheet.pdf", "assets/files/code-examples.zip"],
+    "publishedAt": "2024-05-01"
+  },
+  {
+    "id": "course-102",
+    "title": "React 18: Complete Guide with TypeScript",
+    "slug": "react-18-complete-guide-typescript",
+    "price": 59.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Web Development",
+    "tags": ["react", "typescript", "frontend"],
+    "level": "Intermediate",
+    "duration": "12h 15m",
+    "rating": 4.9,
+    "reviewsCount": 2150,
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-2",
+      "name": "Marcus Chen",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face",
+      "bio": "Senior React Developer at Meta, author of React best practices guide"
+    },
+    "curriculum": [
+      {
+        "section": "React Fundamentals",
+        "lessons": [
+          {"id": "r1", "title": "React 18 Overview", "duration": "10:30", "contentType": "video", "locked": false},
+          {"id": "r2", "title": "Components & JSX", "duration": "25:45", "locked": false}
+        ]
+      },
+      {
+        "section": "Advanced Patterns",
+        "lessons": [
+          {"id": "r3", "title": "Hooks Deep Dive", "duration": "35:20", "locked": false},
+          {"id": "r4", "title": "TypeScript Integration", "duration": "28:15", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 3,
+    "description": "Master React 18 with TypeScript. Learn concurrent features, server components, and build production-ready applications with modern React patterns.",
+    "resources": ["assets/files/react-ts-starter.zip", "assets/files/hooks-cheatsheet.pdf"],
+    "publishedAt": "2024-03-15"
+  },
+  {
+    "id": "course-103",
+    "title": "Python for Data Science: Complete Bootcamp",
+    "slug": "python-data-science-bootcamp",
+    "price": 79.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Data Science",
+    "tags": ["python", "data science", "pandas", "numpy"],
+    "level": "Beginner",
+    "duration": "18h 45m",
+    "rating": 4.7,
+    "reviewsCount": 3420,
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-3",
+      "name": "Dr. Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=face",
+      "bio": "Data Scientist at Google, PhD in Statistics, author of bestselling data science books"
+    },
+    "curriculum": [
+      {
+        "section": "Python Basics",
+        "lessons": [
+          {"id": "p1", "title": "Python Setup & Basics", "duration": "20:15", "contentType": "video", "locked": false},
+          {"id": "p2", "title": "Data Types & Structures", "duration": "30:45", "locked": false}
+        ]
+      },
+      {
+        "section": "Data Analysis with Pandas",
+        "lessons": [
+          {"id": "p3", "title": "Pandas Fundamentals", "duration": "45:30", "locked": false},
+          {"id": "p4", "title": "Data Cleaning & Preprocessing", "duration": "38:20", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 1,
+    "description": "Complete Python bootcamp for data science. Learn NumPy, Pandas, Matplotlib, and machine learning fundamentals with real-world projects.",
+    "resources": ["assets/files/python-ds-dataset.zip", "assets/files/jupyter-notebooks.zip"],
+    "publishedAt": "2024-01-10"
+  },
+  {
+    "id": "course-104",
+    "title": "UI/UX Design Fundamentals",
+    "slug": "ui-ux-design-fundamentals",
+    "price": 39.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Design",
+    "tags": ["ui", "ux", "design", "figma"],
+    "level": "Beginner",
+    "duration": "10h 20m",
+    "rating": 4.6,
+    "reviewsCount": 1890,
+    "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-4",
+      "name": "Elena Rodriguez",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=face",
+      "bio": "Senior UX Designer at Adobe, 10+ years in product design"
+    },
+    "curriculum": [
+      {
+        "section": "Design Principles",
+        "lessons": [
+          {"id": "d1", "title": "Introduction to UX", "duration": "15:30", "contentType": "video", "locked": false},
+          {"id": "d2", "title": "User Research Methods", "duration": "25:45", "locked": false}
+        ]
+      },
+      {
+        "section": "UI Design",
+        "lessons": [
+          {"id": "d3", "title": "Visual Hierarchy", "duration": "20:15", "locked": false},
+          {"id": "d4", "title": "Color Theory & Typography", "duration": "28:30", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 1,
+    "description": "Learn the fundamentals of UI/UX design. Master user research, wireframing, prototyping, and design systems with Figma.",
+    "resources": ["assets/files/design-templates.fig", "assets/files/ui-kit.zip"],
+    "publishedAt": "2024-04-20"
+  },
+  {
+    "id": "course-105",
+    "title": "Digital Marketing Mastery 2025",
+    "slug": "digital-marketing-mastery-2025",
+    "price": 69.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Business",
+    "tags": ["marketing", "seo", "social media", "analytics"],
+    "level": "Intermediate",
+    "duration": "15h 30m",
+    "rating": 4.5,
+    "reviewsCount": 2850,
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-5",
+      "name": "Michael Thompson",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
+      "bio": "CMO at Fortune 500 companies, digital marketing consultant"
+    },
+    "curriculum": [
+      {
+        "section": "Strategy & Planning",
+        "lessons": [
+          {"id": "m1", "title": "Digital Marketing Overview", "duration": "18:20", "contentType": "video", "locked": false},
+          {"id": "m2", "title": "Market Research & Analysis", "duration": "22:45", "locked": false}
+        ]
+      },
+      {
+        "section": "Channels & Tactics",
+        "lessons": [
+          {"id": "m3", "title": "SEO & Content Marketing", "duration": "35:15", "locked": false},
+          {"id": "m4", "title": "Social Media Strategy", "duration": "28:30", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 3,
+    "description": "Master digital marketing in 2025. Learn SEO, social media, PPC advertising, email marketing, and analytics to grow your business online.",
+    "resources": ["assets/files/marketing-templates.zip", "assets/files/analytics-dashboard.xlsx"],
+    "publishedAt": "2024-02-28"
+  },
+  {
+    "id": "course-106",
+    "title": "Node.js Backend Development",
+    "slug": "nodejs-backend-development",
+    "price": 54.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Web Development",
+    "tags": ["nodejs", "backend", "express", "mongodb"],
+    "level": "Intermediate",
+    "duration": "14h 10m",
+    "rating": 4.7,
+    "reviewsCount": 1670,
+    "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-6",
+      "name": "David Kim",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
+      "bio": "Backend Architect at Netflix, Node.js core contributor"
+    },
+    "curriculum": [
+      {
+        "section": "Node.js Basics",
+        "lessons": [
+          {"id": "n1", "title": "Node.js Runtime", "duration": "12:30", "contentType": "video", "locked": false},
+          {"id": "n2", "title": "Modules & NPM", "duration": "18:45", "locked": false}
+        ]
+      },
+      {
+        "section": "Express & APIs",
+        "lessons": [
+          {"id": "n3", "title": "REST API Design", "duration": "25:20", "locked": false},
+          {"id": "n4", "title": "Database Integration", "duration": "32:15", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 3,
+    "description": "Build scalable backend applications with Node.js. Learn Express, MongoDB, authentication, testing, and deployment best practices.",
+    "resources": ["assets/files/nodejs-boilerplate.zip", "assets/files/api-documentation.pdf"],
+    "publishedAt": "2024-06-05"
+  },
+  {
+    "id": "course-107",
+    "title": "Machine Learning with Python",
+    "slug": "machine-learning-python",
+    "price": 89.99,
+    "currency": "USD",
+    "isFree": false,
+    "category": "Data Science",
+    "tags": ["machine learning", "python", "tensorflow", "scikit-learn"],
+    "level": "Advanced",
+    "duration": "22h 40m",
+    "rating": 4.8,
+    "reviewsCount": 4120,
+    "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-7",
+      "name": "Dr. Priya Sharma",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=face",
+      "bio": "ML Research Scientist at DeepMind, author of ML textbooks"
+    },
+    "curriculum": [
+      {
+        "section": "ML Fundamentals",
+        "lessons": [
+          {"id": "ml1", "title": "Introduction to ML", "duration": "20:30", "contentType": "video", "locked": false},
+          {"id": "ml2", "title": "Linear Regression", "duration": "28:45", "locked": false}
+        ]
+      },
+      {
+        "section": "Deep Learning",
+        "lessons": [
+          {"id": "ml3", "title": "Neural Networks", "duration": "45:20", "locked": false},
+          {"id": "ml4", "title": "TensorFlow Basics", "duration": "38:15", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 4,
+    "description": "Comprehensive machine learning course with Python. Learn supervised/unsupervised learning, deep learning, and deploy ML models in production.",
+    "resources": ["assets/files/ml-datasets.zip", "assets/files/tensorflow-notebooks.zip"],
+    "publishedAt": "2024-07-12"
+  },
+  {
+    "id": "course-108",
+    "title": "Introduction to Web Development",
+    "slug": "introduction-web-development",
+    "price": 0,
+    "currency": "USD",
+    "isFree": true,
+    "category": "Web Development",
+    "tags": ["html", "css", "javascript", "beginner"],
+    "level": "Beginner",
+    "duration": "6h 15m",
+    "rating": 4.4,
+    "reviewsCount": 5230,
+    "thumbnail": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=300&fit=crop&crop=center",
+    "instructor": {
+      "id": "inst-8",
+      "name": "Jennifer Liu",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=face",
+      "bio": "Full-stack developer, coding bootcamp instructor"
+    },
+    "curriculum": [
+      {
+        "section": "HTML Basics",
+        "lessons": [
+          {"id": "w1", "title": "HTML Structure", "duration": "8:30", "contentType": "video", "locked": false},
+          {"id": "w2", "title": "Forms & Inputs", "duration": "12:45", "locked": false}
+        ]
+      },
+      {
+        "section": "CSS Styling",
+        "lessons": [
+          {"id": "w3", "title": "CSS Selectors", "duration": "15:20", "locked": false},
+          {"id": "w4", "title": "Responsive Design", "duration": "18:30", "locked": false}
+        ]
+      }
+    ],
+    "language": "English",
+    "levelScore": 1,
+    "description": "Start your web development journey with HTML, CSS, and JavaScript. Build your first websites and learn modern development practices.",
+    "resources": ["assets/files/web-templates.zip", "assets/files/html-css-cheatsheet.pdf"],
+    "publishedAt": "2024-08-01"
+  }
+]
